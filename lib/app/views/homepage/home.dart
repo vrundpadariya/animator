@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'model/json/model.dart';
 
@@ -39,91 +38,47 @@ class home extends StatelessWidget {
                     decodedData.map((e) => AllData.fromjson(data: e)).toList();
                 return ListView.builder(
                   itemCount: allData.length,
-                  itemBuilder: (context, i) => Container(
-                    height: 600,
-                    width: double.infinity,
-                    child: Stack(
-                      children: [
-                        Align(
-                          alignment: Alignment(0, -0.8),
-                          child: Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.blue,
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment(-0.6, -0.5),
-                          child: Container(
-                            height: 60,
-                            width: 60,
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "${AllData}"
+                  itemBuilder: (context, i) => Stack(
+                    children: [
+                      SizedBox(
+                        height: 600,
+                        width: double.infinity,
+                        child: Stack(
+                          children: [
+                            Align(
+                              alignment: Alignment(-0.6, -0.5),
+                              child: Container(
+                                alignment: Alignment.bottomCenter,
+                                height: 400,
+                                width: 400,
+                                color: Colors.white,
+                                child: Container(
+                                  height: 300,
+                                  width: 400,
+                                  color: Colors.grey,
                                 ),
                               ),
                             ),
-                          ),
+                            Align(
+                              alignment: Alignment(-0.9, -0.7),
+                              child: Container(
+                                height: 150,
+                                width: 150,
+                                color: Colors.blue,
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment(0, 0.55),
+                              child: Container(
+                                height: 60,
+                                width: 60,
+                                color: Colors.blue,
+                              ),
+                            ),
+                          ],
                         ),
-                        Align(
-                          alignment: Alignment(0.6, -0.5),
-                          child: Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.grey,
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment(-0.9, -0.1),
-                          child: Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.yellowAccent,
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment(0, -0.1),
-                          child: Container(
-                            height: 100,
-                            width: 100,
-                            color: Colors.blue,
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment(0.9, -0.1),
-                          child: Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.green,
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment(0.6, 0.3),
-                          child: Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.tealAccent,
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment(-0.6, 0.3),
-                          child: Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.purple,
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment(0, 0.6),
-                          child: Container(
-                            height: 60,
-                            width: 60,
-                            color: Colors.blue,
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 );
               }
