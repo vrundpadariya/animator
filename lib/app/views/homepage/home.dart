@@ -26,20 +26,32 @@ class home extends StatelessWidget {
             children: [
               Expanded(
                 flex: 2,
-                child: Container(
-                  color: Colors.red,
-                  child: Row(
-                    children: [
-                      const SizedBox(
-                        width: 10,
+                child: Row(
+                  children: [
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 70,
+                      width: 70,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("lib/app/assets/drawer.png"),
+                        ),
                       ),
-                      Container(
-                        height: 70,
-                        width: 70,
+                    ),
+                    const SizedBox(
+                      width: 60,
+                    ),
+                    const Text(
+                      "Solar System",
+                      style: TextStyle(
+                        fontFamily: 'appbar',
                         color: Colors.white,
+                        fontSize: 25,
                       ),
-                    ],
-                  ),
+                    )
+                  ],
                 ),
               ),
               Expanded(
@@ -61,15 +73,15 @@ class home extends StatelessWidget {
                         itemCount: allData.length,
                         itemBuilder: (context, i) => Column(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               height: 120,
                             ),
                             Container(
                               padding: EdgeInsets.zero,
                               child: Stack(
                                 children: [
-                                  Container(
-                                    height: 600,
+                                  SizedBox(
+                                    height: 500,
                                     width: 500,
                                     child: Stack(
                                       children: [
@@ -79,33 +91,39 @@ class home extends StatelessWidget {
                                           child: Container(
                                             alignment: Alignment.bottomCenter,
                                             height: 400,
-                                            width: 400,
+                                            width: 350,
                                             child: Container(
+                                              padding: EdgeInsets.all(10),
                                               height: 300,
                                               width: 400,
-                                              color: Color(
-                                                  int.parse(allData[i].color)),
+                                              decoration: BoxDecoration(
+                                                color: Color(int.parse(
+                                                        allData[i].color))
+                                                    .withOpacity(0.8),
+                                                borderRadius:
+                                                    BorderRadius.circular(20),
+                                              ),
                                               child: Column(
                                                 children: [
                                                   const SizedBox(
-                                                    height: 100,
+                                                    height: 80,
                                                   ),
                                                   Align(
-                                                    alignment:
-                                                        Alignment(-0.8, 0),
-                                                    child: Text(
-                                                      allData[i].name,
-                                                      style: GoogleFonts
-                                                          .albertSans(
-                                                              fontSize: 30),
-                                                    ),
+                                                    alignment: const Alignment(
+                                                        -0.8, 0),
+                                                    child: Text(allData[i].name,
+                                                        style: const TextStyle(
+                                                          fontFamily: "appbar",
+                                                          fontSize: 30,
+                                                        )),
                                                   ),
                                                   const SizedBox(
                                                     height: 20,
                                                   ),
                                                   Text(
                                                     allData[i].home,
-                                                    style: GoogleFonts.roboto(
+                                                    style: const TextStyle(
+                                                      fontFamily: "content",
                                                       fontSize: 15,
                                                     ),
                                                   )
@@ -115,23 +133,29 @@ class home extends StatelessWidget {
                                           ),
                                         ),
                                         Align(
-                                          alignment: Alignment(-1.15, -0.8),
+                                          alignment:
+                                              const Alignment(-1.2, -1.8),
                                           child: Container(
-                                            height: 250,
-                                            width: 250,
+                                            height: 350,
+                                            width: 350,
                                             decoration: BoxDecoration(
                                               image: DecorationImage(
                                                 fit: BoxFit.fill,
                                                 image: AssetImage(
-                                                    "${allData[i].image}"),
+                                                    allData[i].image),
                                               ),
                                             ),
                                           ),
                                         ),
                                         Align(
-                                          alignment: Alignment(-0.05, 0.55),
+                                          alignment:
+                                              const Alignment(-0.4, 0.88),
                                           child: GestureDetector(
-                                            onTap: () {},
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, 'Detail',
+                                                  arguments: allData[i]);
+                                            },
                                             child: Container(
                                               alignment: Alignment.center,
                                               height: 60,
@@ -144,7 +168,7 @@ class home extends StatelessWidget {
                                                 color: Color(int.parse(
                                                     allData[i].color)),
                                               ),
-                                              child: Icon(
+                                              child: const Icon(
                                                 Icons.arrow_forward_ios,
                                                 size: 35,
                                               ),
