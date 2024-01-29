@@ -9,6 +9,12 @@ Project Definition: Galaxy Planets (Animator)
 
 
 
+==========FIGMA==========
+
+<"https://www.figma.com/file/60pkvp0f4gpreD6IBXSPQx/Space-App-Concept-(Community)?type=design&node-id=15-4628&mode=design&t=xREMgryNw2WPP5Pc-0">
+
+----
+
 
 Project Description:
 "Galaxy Planets (Animator)" is an exciting mobile application built using Flutter, focusing on
@@ -83,12 +89,12 @@ Project Evaluation:
 
 
 ===================================SCREEN SHOT=========================
-
-<img src="https://github.com/vrundpadariya/animator/assets/133338321/317ba9dc-1199-48a1-b1dd-d5b3a9aa7f57" width="250">
+<img src="https://github.com/vrundpadariya/animator/assets/133338321/d5da589b-e2c0-4a85-9c8c-bc510198fd96" width="250">
+<img src="https://github.com/vrundpadariya/animator/assets/133338321/a06e9ec5-6c7d-4e1d-bbcd-16d8fe99b64b" width="250">
 <img src="https://github.com/vrundpadariya/animator/assets/133338321/74b25a56-aab4-41b0-8946-9c56abde2d39" width="250">
 <img src="https://github.com/vrundpadariya/animator/assets/133338321/a35f06e3-3a7e-400b-8a05-0a7e3785bb26" width="250">
-<img src="https://github.com/vrundpadariya/animator/assets/133338321/a06e9ec5-6c7d-4e1d-bbcd-16d8fe99b64b" width="250">
-<img src="https://github.com/vrundpadariya/animator/assets/133338321/d5da589b-e2c0-4a85-9c8c-bc510198fd96" width="250">
+<img src="https://github.com/vrundpadariya/animator/assets/133338321/317ba9dc-1199-48a1-b1dd-d5b3a9aa7f57" width="250">
+
 
 
 
