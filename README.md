@@ -87,12 +87,6 @@ Project Evaluation:
 - User satisfaction with the application’s functionality and UI/UX
 - Quality of code and project structure
 
-===================================SCREEN recording =========================
-
-<img src="https://github.com/vrundpadariya/animator/assets/133338321/d5da589b-e2c0-4a85-9c8c-bc510198fd96" width="250">
-
-
-
 
 ===================================SCREEN SHOT=========================
 <img src="https://github.com/vrundpadariya/animator/assets/133338321/d5da589b-e2c0-4a85-9c8c-bc510198fd96" width="250">
@@ -100,6 +94,11 @@ Project Evaluation:
 <img src="https://github.com/vrundpadariya/animator/assets/133338321/74b25a56-aab4-41b0-8946-9c56abde2d39" width="250">
 <img src="https://github.com/vrundpadariya/animator/assets/133338321/a35f06e3-3a7e-400b-8a05-0a7e3785bb26" width="250">
 <img src="https://github.com/vrundpadariya/animator/assets/133338321/317ba9dc-1199-48a1-b1dd-d5b3a9aa7f57" width="250">
+
+
+===================================SCREEN recording =========================
+
+<img src="https://github.com/vrundpadariya/animator/assets/133338321/57b0a2ac-1a72-4617-8ba1-a2bd66a62eb9" width="250">
 
 
 
