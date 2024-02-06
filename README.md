@@ -87,6 +87,12 @@ Project Evaluation:
 - User satisfaction with the application’s functionality and UI/UX
 - Quality of code and project structure
 
+===================================SCREEN recording =========================
+
+<img src="https://github.com/vrundpadariya/animator/assets/133338321/d5da589b-e2c0-4a85-9c8c-bc510198fd96" width="250">
+
+
+
 
 ===================================SCREEN SHOT=========================
 <img src="https://github.com/vrundpadariya/animator/assets/133338321/d5da589b-e2c0-4a85-9c8c-bc510198fd96" width="250">
