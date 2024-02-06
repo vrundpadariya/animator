@@ -2,8 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:get/get.dart';
 
+import 'controller/homecontroller.dart';
 import 'model/json/model.dart';
 
 class home extends StatelessWidget {
@@ -11,6 +12,7 @@ class home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    HomeScreenController homeScreenController = Get.put(HomeScreenController());
     return SafeArea(
       child: Container(
         decoration: const BoxDecoration(
@@ -135,16 +137,33 @@ class home extends StatelessWidget {
                                         Align(
                                           alignment:
                                               const Alignment(-1.2, -1.8),
-                                          child: Container(
-                                            height: 350,
-                                            width: 350,
-                                            decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                fit: BoxFit.fill,
-                                                image: AssetImage(
-                                                    allData[i].image),
+                                          child: AnimatedBuilder(
+                                            animation: homeScreenController
+                                                .animationController,
+                                            child: Container(
+                                              height: 350,
+                                              width: 350,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  fit: BoxFit.fill,
+                                                  image: AssetImage(
+                                                      allData[i].image),
+                                                ),
                                               ),
                                             ),
+                                            builder: (BuildContext context,
+                                                Widget? child) {
+                                              return Transform.translate(
+                                                offset: homeScreenController
+                                                    .offsetFirstAnimation.value,
+                                                child: Transform.translate(
+                                                  offset: homeScreenController
+                                                      .offsetSecondAnimation
+                                                      .value,
+                                                  child: child,
+                                                ),
+                                              );
+                                            },
                                           ),
                                         ),
                                         Align(
